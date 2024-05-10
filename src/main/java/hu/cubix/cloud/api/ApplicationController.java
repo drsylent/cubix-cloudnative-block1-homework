@@ -13,10 +13,10 @@ import java.time.LocalDateTime;
 @RequestMapping("/")
 public class ApplicationController {
 
-    @GetMapping("/application/test")
+    @GetMapping("/cubix/test")
     public CubixResponse demoMessage(@RequestParam(required = false, name = "message") String message) {
         if (!StringUtils.hasText(message)) {
-            message = "default";
+            message = "Ez egy alapértelmezett üzenet";
         }
         return new CubixResponse(LocalDateTime.now(), message);
     }
