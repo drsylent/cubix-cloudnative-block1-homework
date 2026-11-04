@@ -56,7 +56,7 @@ jobs:
       uses: actions/download-artifact@v4
       with:
         name: java-app
-        path: target/
+        path: .
     
     - name: Docker login
       run: docker login ghcr.io -u vacgo -p ${{ github.token }}
