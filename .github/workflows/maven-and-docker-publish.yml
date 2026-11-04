@@ -58,8 +58,8 @@ jobs:
       run: docker login ghcr.io -u vacgo -p ${{ github.token }}
           
     - name: Docker build
-      run: docker build . -t ghcr.io/vacgo/cubix/1/homework/app:springboot
+      run: docker build . -t ghcr.io/vacgo/cubix-cloudnative-block1-homework:springboot
           
     - name: Docker push
-      run: docker push ghcr.io/vacgo/cubix/1/homework/app:springboot
+      run: docker push ghcr.io/vacgo/cubix-cloudnative-block1-homework:springboot
 
