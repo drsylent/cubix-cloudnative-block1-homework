@@ -69,4 +69,3 @@ jobs:
 
     - name: Verify Docker image
       run: bash verify-image.sh
-
